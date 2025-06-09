@@ -1,0 +1,25 @@
+.contact-section {
+  background-color: #111;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-section .underline {
+  width: 60px;
+  height: 4px;
+  background-color: #e91e63;
+  margin-top: 5px;
+}
+
+.contact-card {
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

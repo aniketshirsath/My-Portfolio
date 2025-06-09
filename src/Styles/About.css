@@ -1,0 +1,41 @@
+.about-section {
+  background-color: #111;  /* Same as skills-section bg */
+  padding: 80px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  border-bottom: 3px solid #7a2fff;  /* Same purple border */
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  background-color: #1a1a1a;  /* Like skill-card */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.about-content:hover {
+  transform: scale(1.02);
+  background-color: #222;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #ddd;
+}
+
+.about-content .highlight {
+  color: #7a2fff;
+  font-weight: 600;
+}

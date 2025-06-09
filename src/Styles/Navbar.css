@@ -1,0 +1,25 @@
+.navbar {
+background-color: #111 !important;
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+
+.navbar-brand {
+font-size: 1.5rem;
+}
+
+.text-gradient {
+background: linear-gradient(90deg, #00c6ff, #7a2fff);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: bold;
+}
+
+.nav-link {
+color: white !important;
+font-weight: 500;
+}
+
+.nav-link:hover {
+color: #7a2fff !important;
+}
