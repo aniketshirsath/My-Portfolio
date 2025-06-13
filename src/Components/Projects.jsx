@@ -37,10 +37,10 @@ const Projects = () => {
       <h2 className="section-title">Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <div className="project-card" key={index}>
+          <div className="project-card container" key={index}>
             <img src={project.image} alt={project.title} className="project-img img-fluid" />
             <div className="project-info">
-              <h3>{project.title}</h3>
+              <h4>{project.title}</h4>
               <p>{project.description}</p>
               <div className="btn-group">
                 <a href={project.code} target="_blank" rel="noreferrer" className="btn text-light">Code</a>

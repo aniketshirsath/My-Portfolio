@@ -11,12 +11,17 @@
   display: inline-block;
   padding-bottom: 5px;
 }
-
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
 .project-card {
   background-color: #1a1a1a;
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
