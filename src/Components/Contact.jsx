@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../Styles/Contact.css';
 import { FaLinkedinIn, FaGithub, FaEnvelope, FaUser, FaPhone } from 'react-icons/fa';
+import { MdPhone } from 'react-icons/md';
+
 
 function Contact() {
   const [contactItems, setContactItems] = useState([]);
@@ -34,7 +36,7 @@ function Contact() {
         download: true,
       },
       {
-        icon: <FaPhone size={25} />,
+        icon: <MdPhone  size={25} />,
         label: 'Call',
         url: 'tel:+919999999999',
         bg: '#f76c6c',
