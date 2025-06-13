@@ -7,15 +7,15 @@ const Projects = () => {
   useEffect(() => {
     const fetchedProjects = [
       {
-        title: "Hevenly Heven",
-        image: "https://your-screenshot-link-2.png",
-        description: "Hevenly Heven Ecommerce Website for selling products online. Built with modern frontend tools and components.",
-        code: "https://github.com/your-username/hevenly",
-        live: "https://hevenly-heven.vercel.app/",
+        title: "🎨 Paul Smith - Frontend Clone Website",
+        image: "https://private-user-images.githubusercontent.com/148868961/454838643-bad9ea47-a1ac-42a7-9786-4e3a07b75468.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk4MTQ0NjEsIm5iZiI6MTc0OTgxNDE2MSwicGF0aCI6Ii8xNDg4Njg5NjEvNDU0ODM4NjQzLWJhZDllYTQ3LWExYWMtNDJhNy05Nzg2LTRlM2EwN2I3NTQ2OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxM1QxMTI5MjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMmUyZGI0NmU4NWJkNzliZWYxZjEyMzZhNzlkY2U0YmVhYTdiNDkzMmVlZTdjNmQwYzU5MGQyMjFlOTFkYmZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.SiheV59i7E6r9gRw9vGXtTvYHEociZ9kTc1GUhDlTZo",
+        description: "Welcome to the Paul Smith Clone – a modern, responsive frontend website inspired by the Paul Smith e-commerce design. Built with clean layouts and smooth navigation for a user-friendly shopping experience.",
+        code: "https://github.com/aniketshirsath/PaulSmith_Fe",
+        live: "https://paul-smith-fe.vercel.app/",
       },
       {
         title: "🎬 CineVibe - Movie Booking Website UI",
-        image: "https://private-user-images.githubusercontent.com/148868961/454013405-a0d25add-378a-42b1-a20f-3fe7bbe4552c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk2NjA5NzUsIm5iZiI6MTc0OTY2MDY3NSwicGF0aCI6Ii8xNDg4Njg5NjEvNDU0MDEzNDA1LWEwZDI1YWRkLTM3OGEtNDJiMS1hMjBmLTNmZTdiYmU0NTUyYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxMVQxNjUxMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02OWU2MjljMWM3YWZiODk4NThjNWM4OTA3ODY0YmY5MDM0ZmVhODMxMTliODI5ZTI2ZmViMGM1ZjU5NmM2MDE0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.jlvb01prnUencBJj5dFwyoDUT9RJsBBN-FQtlDoWeqI",
+        image: "https://private-user-images.githubusercontent.com/148868961/454013405-a0d25add-378a-42b1-a20f-3fe7bbe4552c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk4MDg2MTksIm5iZiI6MTc0OTgwODMxOSwicGF0aCI6Ii8xNDg4Njg5NjEvNDU0MDEzNDA1LWEwZDI1YWRkLTM3OGEtNDJiMS1hMjBmLTNmZTdiYmU0NTUyYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxM1QwOTUxNTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYjUyNWE0MmI5ZmI3YjllOGI0N2FjMTA5OTU0NWEyZTY1MWI3OTA1NGRiOGY0N2EzYjIzNjU4ODUyNWNjYjQ2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.spBQQrPtsyVp3Wfnidq8Bygdpcd-I-5D6JhdG7VQYas",
         description: "CineVibe is a modern movie booking website frontend built with HTML, CSS, and Media Queries. It features a clean UI inspired by platforms like BookMyShow and showcases responsive design skills.",
         code: "https://github.com/aniketshirsath/CineVibe",
         live: "https://cine-vibe-omega.vercel.app/",
