@@ -14,7 +14,7 @@ const Navbar = () => {
             <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
             <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
             <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
-            <li className="nav-item"><a className="btn btn-outline-light ms-3" href="/MyResume.pdf" target="_blank">Resume</a></li>
+            <li className="nav-item"><a className="btn btn-outline-light ms-3" href="/MyResume.pdf" download={true}>Resume</a></li>
           </ul>
         </div>
       </div>
