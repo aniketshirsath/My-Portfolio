@@ -6,7 +6,7 @@ const Projects = () => {
 
   useEffect(() => {
     const fetchedProjects = [
-       {
+      {
         title: "🛍️ Westside - React E-commerce Clone Website",
         image: "https://private-user-images.githubusercontent.com/148868961/455466281-4bb1e07c-7db0-4234-bbca-3fc1a55bb0db.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTAwNzA0NDUsIm5iZiI6MTc1MDA3MDE0NSwicGF0aCI6Ii8xNDg4Njg5NjEvNDU1NDY2MjgxLTRiYjFlMDdjLTdkYjAtNDIzNC1iYmNhLTNmYzFhNTViYjBkYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxNlQxMDM1NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jNTE0ZTFhNWRjOWYwODBjOWE4NjgyYjMxNDdmMDg4OTU4NDVjZDFkOGYxN2M3ZjU3MWZhOTlmYmFkZDk1MTMxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.eE4t2pgQeyRgcsx5Adg8qQHxK-DcItbxTNWGPPbOX5U",
         description: "A stylish fashion e-commerce website with a smooth shopping cart, trendy product pages, and modern UI design.",
