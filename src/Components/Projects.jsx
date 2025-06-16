@@ -6,6 +6,13 @@ const Projects = () => {
 
   useEffect(() => {
     const fetchedProjects = [
+       {
+        title: "🛍️ Westside - React E-commerce Clone Website",
+        image: "https://private-user-images.githubusercontent.com/148868961/455466281-4bb1e07c-7db0-4234-bbca-3fc1a55bb0db.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTAwNzA0NDUsIm5iZiI6MTc1MDA3MDE0NSwicGF0aCI6Ii8xNDg4Njg5NjEvNDU1NDY2MjgxLTRiYjFlMDdjLTdkYjAtNDIzNC1iYmNhLTNmYzFhNTViYjBkYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxNlQxMDM1NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jNTE0ZTFhNWRjOWYwODBjOWE4NjgyYjMxNDdmMDg4OTU4NDVjZDFkOGYxN2M3ZjU3MWZhOTlmYmFkZDk1MTMxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.eE4t2pgQeyRgcsx5Adg8qQHxK-DcItbxTNWGPPbOX5U",
+        description: "A stylish fashion e-commerce website with a smooth shopping cart, trendy product pages, and modern UI design.",
+        code: "https://github.com/aniketshirsath/Westside_Fe",
+        live: "https://westside-fe.vercel.app/",
+      },
       {
         title: "🎨 Paul Smith - Frontend Clone Website",
         image: "https://private-user-images.githubusercontent.com/148868961/454838643-bad9ea47-a1ac-42a7-9786-4e3a07b75468.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk4MTQ0NjEsIm5iZiI6MTc0OTgxNDE2MSwicGF0aCI6Ii8xNDg4Njg5NjEvNDU0ODM4NjQzLWJhZDllYTQ3LWExYWMtNDJhNy05Nzg2LTRlM2EwN2I3NTQ2OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxM1QxMTI5MjFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMmUyZGI0NmU4NWJkNzliZWYxZjEyMzZhNzlkY2U0YmVhYTdiNDkzMmVlZTdjNmQwYzU5MGQyMjFlOTFkYmZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.SiheV59i7E6r9gRw9vGXtTvYHEociZ9kTc1GUhDlTZo",
@@ -28,13 +35,6 @@ const Projects = () => {
         live: "https://casmart-webpage.vercel.app/",
       },
       {
-        title: "🛍️ Casmart - Fashion E-commerce Website",
-        image: "https://private-user-images.githubusercontent.com/148868961/453785981-58a60f31-78cd-470d-b8e1-9d803a505ad0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk2MjYwMDUsIm5iZiI6MTc0OTYyNTcwNSwicGF0aCI6Ii8xNDg4Njg5NjEvNDUzNzg1OTgxLTU4YTYwZjMxLTc4Y2QtNDcwZC1iOGUxLTlkODAzYTUwNWFkMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxMVQwNzA4MjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xOGViNWJmMTE0ZWJiMTVhNDExODAwMzM1Zjg5ZDFlOTdjZTdjYWIyNmI1MTFhYjRjZmMxZDZiNmYzZjlkNTM1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.c9Hvz_-ySGLiDlhA00iJ4NbVWUoNl0fT9XEOX0WiePs",
-        description: "Casmart is a stylish and responsive fashion e-commerce frontend made with HTML, CSS, Bootstrap. It’s perfect for online store layouts..",
-        code: "https://github.com/aniketshirsath/casmart_web",
-        live: "https://casmart-webpage.vercel.app/",
-      },
-       {
         title: "🛍️ Casmart - Fashion E-commerce Website",
         image: "https://private-user-images.githubusercontent.com/148868961/453785981-58a60f31-78cd-470d-b8e1-9d803a505ad0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk2MjYwMDUsIm5iZiI6MTc0OTYyNTcwNSwicGF0aCI6Ii8xNDg4Njg5NjEvNDUzNzg1OTgxLTU4YTYwZjMxLTc4Y2QtNDcwZC1iOGUxLTlkODAzYTUwNWFkMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxMVQwNzA4MjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xOGViNWJmMTE0ZWJiMTVhNDExODAwMzM1Zjg5ZDFlOTdjZTdjYWIyNmI1MTFhYjRjZmMxZDZiNmYzZjlkNTM1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.c9Hvz_-ySGLiDlhA00iJ4NbVWUoNl0fT9XEOX0WiePs",
         description: "Casmart is a stylish and responsive fashion e-commerce frontend made with HTML, CSS, Bootstrap. It’s perfect for online store layouts..",
