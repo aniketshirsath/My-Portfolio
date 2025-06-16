@@ -8,14 +8,21 @@ const Projects = () => {
     const fetchedProjects = [
       {
         title: "🛍️ Westside - React E-commerce Clone Website",
-        image: "https://www.westside.com/cdn/shop/files/CasualShirts-Web_7c11c86e-af50-4e6e-80ce-f13fabb1c2ac.jpg?v=1749792344",
+        image: "https://static-cse.canva.com/blob/1631147/33_Bellroy_2.jpg",
+        description: "A stylish fashion e-commerce website with a smooth shopping cart, trendy product pages, and modern UI design.",
+        code: "https://github.com/aniketshirsath/Westside_Fe",
+        live: "https://westside-fe.vercel.app/",
+      },
+      {
+        title: "🛍️ Westside - React E-commerce Clone Website",
+        image: "https://avadaio_assets.storage.googleapis.com/uploads/2023/11/24112824/10-WESTSIDE.jpg",
         description: "A stylish fashion e-commerce website with a smooth shopping cart, trendy product pages, and modern UI design.",
         code: "https://github.com/aniketshirsath/Westside_Fe",
         live: "https://westside-fe.vercel.app/",
       },
       {
         title: "🎨 Paul Smith - Frontend Clone Website",
-        image: "https://www.madethought.com/uploads/projects/PAUL-SMITH/_landscape768/Madethought_PAUL-SMITH_CASE-STUDY-1.jpg",
+        image: "https://a.storyblok.com/f/88751/1634x980/b092afeec7/paulsmith-preview.png/m/900x0/",
         description: "Welcome to the Paul Smith Clone – a modern, responsive frontend website inspired by the Paul Smith e-commerce design. Built with clean layouts and smooth navigation for a user-friendly shopping experience.",
         code: "https://github.com/aniketshirsath/PaulSmith_Fe",
         live: "https://paul-smith-fe.vercel.app/",
@@ -45,9 +52,9 @@ const Projects = () => {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project-card container" key={index}>
-            <img src={project.image} alt={project.title} className="project-img img-fluid mt-5" />
-            <div className="project-info">
-              <h4>{project.title}</h4>
+            <img src={project.image} alt={project.title} className="project-img img-fluid" />
+            <div className="project-info p-3">
+              <h4 className="mt-3">{project.title}</h4>
               <p>{project.description}</p>
               <div className="btn-group">
                 <a href={project.code} target="_blank" rel="noreferrer" className="btn text-light">Code</a>
