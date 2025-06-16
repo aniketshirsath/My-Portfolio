@@ -8,7 +8,7 @@ const Projects = () => {
     const fetchedProjects = [
       {
         title: "🛍️ Westside - React E-commerce Clone Website",
-        image: "https://www.westside.com/cdn/shop/files/Polo-Web_5f2d056f-0e57-4ed1-b839-325148538f6c.jpg?v=1749792532",
+        image: "https://www.westside.com/cdn/shop/files/CasualShirts-Web_7c11c86e-af50-4e6e-80ce-f13fabb1c2ac.jpg?v=1749792344",
         description: "A stylish fashion e-commerce website with a smooth shopping cart, trendy product pages, and modern UI design.",
         code: "https://github.com/aniketshirsath/Westside_Fe",
         live: "https://westside-fe.vercel.app/",
