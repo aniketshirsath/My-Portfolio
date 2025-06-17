@@ -50,3 +50,44 @@
 .project-link {
   text-decoration: none;
 }
+
+/* ----- */
+
+.nav-tabs .nav-link {
+  background-color: transparent;
+  color: #7a2fff !important; /* Ensure default text is light gray */
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #fff !important;
+  border-color: #7a2fff;
+}
+
+.nav-tabs .nav-link.active {
+ 
+  border-color: #7a2fff;
+  font-weight: bold;
+}
+
+
+.projects-grid {
+  transition: all 0.5s ease-in-out;
+}
+
+
+.btn-outline-light {
+  border: 1px solid #fff;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #7a2fff;
+  color: #fff;
+  border-color: #7a2fff;
+}

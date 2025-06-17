@@ -3,15 +3,22 @@ import "../Styles/Projects.css";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
+  const filteredProjects =
+    selectedCategory === "all"
+      ? projects
+      : projects.filter((proj) => proj.category === selectedCategory);
 
   useEffect(() => {
     const fetchedProjects = [
       {
-        title: "🛍️ Westside - React E-commerce Clone Website",
-        image: "https://static-cse.canva.com/blob/1631147/33_Bellroy_2.jpg",
+        title: "AJIO - React E-commerce Website",
+        image: "https://user-images.githubusercontent.com/86410149/134050863-999bc6f0-71f8-4cde-8631-ba9f0701c463.png",
         description: "A stylish fashion e-commerce website with a smooth shopping cart, trendy product pages, and modern UI design.",
-        code: "https://github.com/aniketshirsath/Westside_Fe",
-        live: "https://westside-fe.vercel.app/",
+        code: "https://github.com/aniketshirsath/Ajio_Fe",
+        live: "https://ajio-fe.vercel.app/  ",
+        category: "react"
       },
       {
         title: "🛍️ Westside - React E-commerce Clone Website",
@@ -19,6 +26,7 @@ const Projects = () => {
         description: "A stylish fashion e-commerce website with a smooth shopping cart, trendy product pages, and modern UI design.",
         code: "https://github.com/aniketshirsath/Westside_Fe",
         live: "https://westside-fe.vercel.app/",
+        category: "react"
       },
       {
         title: "🎨 Paul Smith - Frontend Clone Website",
@@ -26,6 +34,7 @@ const Projects = () => {
         description: "Welcome to the Paul Smith Clone – a modern, responsive frontend website inspired by the Paul Smith e-commerce design. Built with clean layouts and smooth navigation for a user-friendly shopping experience.",
         code: "https://github.com/aniketshirsath/PaulSmith_Fe",
         live: "https://paul-smith-fe.vercel.app/",
+        category: "javascript"
       },
       {
         title: "🎬 CineVibe - Movie Booking Website UI",
@@ -33,6 +42,7 @@ const Projects = () => {
         description: "CineVibe is a modern movie booking website frontend built with HTML, CSS, and Media Queries. It features a clean UI inspired by platforms like BookMyShow and showcases responsive design skills.",
         code: "https://github.com/aniketshirsath/CineVibe",
         live: "https://cine-vibe-omega.vercel.app/",
+        category: "html-css"
       },
       {
         title: "🛍️ Casmart - Fashion E-commerce Website",
@@ -40,6 +50,7 @@ const Projects = () => {
         description: "Casmart is a stylish and responsive fashion e-commerce frontend made with HTML, CSS, Bootstrap. It’s perfect for online store layouts..",
         code: "https://github.com/aniketshirsath/casmart_web",
         live: "https://casmart-webpage.vercel.app/",
+        category: "html-css"
       }
     ];
 
@@ -49,8 +60,45 @@ const Projects = () => {
   return (
     <section className="projects-section container" id="projects">
       <h2 className="section-title">Projects</h2>
+
+      <ul className="nav nav-tabs mb-4">
+        <li className="nav-item">
+          <button
+            className={`nav-link ${selectedCategory === "all" ? "active" : ""}`}
+            onClick={() => setSelectedCategory("all")}
+          >
+            All
+          </button>
+        </li>
+        <li className="nav-item">
+          <button
+            className={`nav-link ${selectedCategory === "html-css" ? "active" : ""}`}
+            onClick={() => setSelectedCategory("html-css")}
+          >
+            HTML-CSS
+          </button>
+        </li>
+        <li className="nav-item">
+          <button
+            className={`nav-link ${selectedCategory === "javascript" ? "active" : ""}`}
+            onClick={() => setSelectedCategory("javascript")}
+          >
+            JavaScript
+          </button>
+        </li>
+        <li className="nav-item">
+          <button
+            className={`nav-link ${selectedCategory === "react" ? "active" : ""}`}
+            onClick={() => setSelectedCategory("react")}
+          >
+            React
+          </button>
+        </li>
+      </ul>
+
+
       <div className="projects-grid">
-        {projects.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <div className="project-card container" key={index}>
             <img src={project.image} alt={project.title} className="project-img img-fluid" />
             <div className="project-info p-3">
