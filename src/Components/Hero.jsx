@@ -13,7 +13,7 @@ const Hero = () => {
     const data = {
       name: 'ANIKET SHIRSATH',
       role: 'Frontend Developer',
-      image: ''
+      image: 'https://img.freepik.com/premium-vector/male-face-avatar-icon-set-flat-design-social-media-profiles_1281173-3806.jpg?semt=ais_hybrid&w=730'
     };
 
     setUserInfo(data);
@@ -34,8 +34,8 @@ const Hero = () => {
           <img
             src={userInfo.image}
             alt="profile"
-            className=" img-fluid"
-            
+            className="rounded-circle img-fluid"
+            style={{ width: "170px", height: "170px", objectFit: "cover" }}
           />
         </div>
       </div>
