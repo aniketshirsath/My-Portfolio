@@ -34,8 +34,8 @@ const Hero = () => {
           <img
             src={userInfo.image}
             alt="profile"
-            className="rounded-circle img-fluid"
-            style={{ width: "170px", height: "170px", objectFit: "cover" }}
+            className=" img-fluid"
+            
           />
         </div>
       </div>
