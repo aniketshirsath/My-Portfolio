@@ -31,7 +31,7 @@ function Contact() {
       {
         icon: <FaUser size={25} />,
         label: 'Resume',
-        url: '/Aniket-Resume.pdf',
+        url: '/AniketResume.pdf',
         bg: '#4b5c6b',
         download: true,
       },
