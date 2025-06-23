@@ -13,7 +13,7 @@ const Hero = () => {
     const data = {
       name: 'ANIKET SHIRSATH',
       role: 'Frontend Developer',
-      image: 'https://img.freepik.com/premium-vector/male-face-avatar-icon-set-flat-design-social-media-profiles_1281173-3806.jpg?semt=ais_hybrid&w=730'
+      image: ''
     };
 
     setUserInfo(data);
